@@ -1,26 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first website </title>
-</head>
-<body style="background-image: url('son.jpg');">
-    <h1 style="color: white;">THE REAL HERO</h1>
-    <h style="color: white;">sonu sood</h>
-    <p style="color: white;";>
-        Sonu Sood (born 30 July 1973) :is an 
-        <br>:Indian actor, </br>
-        <br>:film producer, </br>
-        <br>:model, </br>   
-        <br> :humanitarian,</br>
-        <br>:philanthropist </br>
-        <br> who works predominantly in Hindi, Telugu, and Tamil films.</br>
-        <br>In 2009, he received the Andhra Pradesh State Nandi Award for Best Villain</br>>the Filmfare Award for Best Supporting Actor – Telugu for his work in the Telugu blockbuster Arundhati<br>>In 2010, he garnered the Apsara Award for Best Actor in a Negative Role and the IIFA Award for Best Performance in a Negative Role for the Bollywood film Dabangg<br>> In 2012, he received the SIIMA Award for Best Actor in a Negative Role (Telugu) for Julayi<br>>He is best known for roles in films such as Yuva (2004), Athadu (2005), Aashiq Banaya Aapne (2005), Ashok (2006), Jodhaa Akbar (2008), Arundhati (2009), Dookudu (2011), Shootout at Wadala (2013), Happy New Year (2014), Kung Fu Yoga (2017) and Simmba (2018)<br>>He also appeared in commercials for Apollo Tyres and Airtel
-        <a href="https://pramod6008.github.io/firstweb/site/index2">2nd wesite</a>
-        <br>>In July 2016, he established the production house Shakti Sagar Productions<br>>which is named after his father, Shakti Sagar Sood<br>. In September 2020, Sood was chosen for the ‛SDG Special Humanitarian Action Award’ by the United Nations Development Programme (UNDP) <br>for his humanitarian works during the COVID-19 pandemic
-        </p>
-        
-    </body>
-</html>
+#packages:
+![](download.jpg)
+ >Packages are a way of structuring Python’s module namespace by using “dotted module names”. For example, the module name A.B designates a submodule named B in a package named A. Just like the use of modules saves the authors of different modules from having to worry about each other’s global variable names, the use of dotted module names saves the authors of multi-module packages like NumPy or Pillow from having to worry about each other’s module names.
+ ![pack](packages_300w.webp)
+
+#pip in python:
+![pip](download%20(1).png))
+it is used to install , uninstall and we can do many things with pip 
+>format:python -m pip list [options]
+
+###options:
+>-o, --outdated
+List outdated packages
+
+>-u, --uptodate
+List uptodate packages
+
+>-e, --editable
+List editable projects.
+
+>-l, --local
+If in a virtualenv that has global access, do not list globally-installed packages.
+
+>--user
+Only output packages installed in user-site.
+
+>--path <path>
+Restrict to the specified installation path for listing packages (can be used multiple times).
+
+>--pre
+Include pre-release and development versions. By default, pip only finds stable versions.
+
+>--format <list_format>
+Select the output format among: columns (default), freeze, or json
+
+>--not-required
+List packages that are not dependencies of installed packages.
+
+>--exclude-editable
+Exclude editable package from output.
+
+>--include-editable
+Include editable package from output.
+
+>--exclude <package>
+Exclude specified package from the output
+
+####Users of the package can import individual modules from the package.
+
+##there are some of the examples of  packages 
+###for printing fibanocci series
+![](fibbanocci.png)
+> import fibo
+>fib = fibo.fib
+>fib(500)
+>0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+
+Users of the package can import individual modules from the package, for example:
+
+###for sound
+![](sound.jpg)
+>import sound.effects.echo
+>sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)
+
+###for arrays:
+![numpy](download.png)
+>import numpy as np
+a = np.arange(15).reshape(3, 5)
+print(a)
+
+###for images and videos AI
+![cv](download%20(1).jpg)
+>import cv2  
+cv2.imread('dog.jpg',1)  
+cv2.imshow('image',img)  
+cv2.waitKey()    
+cv2.destroyAllWindows() 
+
+###for tables statistics
+![PANDA](pandas.jpg)
+>pandas.DataFrame( data, index, columns, dtype, copy)
